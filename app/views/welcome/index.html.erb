@@ -4,14 +4,35 @@
 
 <hr>
 
-<div id="mapid" style="height: 200px;"></div>
+<div id="mapid" style="height: 350px; width: 300px;"></div>
 
 <script type="application/javascript">
-  var mymap = L.map('mapid').setView([41.943, 8.481], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'kalimaha.01bj24l8',
-    accessToken: 'pk.eyJ1Ijoia2FsaW1haGEiLCJhIjoiY2lucXFpNzRpMTBjN3UybTNuajJwczRreSJ9.xPsUmf8Vf_7ySGaT-KyGjw'
-  }).addTo(mymap);
+
+
+  $.getJSON('geojson/1859.geojson', function (result) {
+    var geojson = result;
+    var mymap = L.map('mapid').setView([41.86, 12.50], 5);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      maxZoom: 18,
+      id: 'kalimaha.01bj24l8',
+      accessToken: 'pk.eyJ1Ijoia2FsaW1haGEiLCJhIjoiY2lucXFpNzRpMTBjN3UybTNuajJwczRreSJ9.xPsUmf8Vf_7ySGaT-KyGjw'
+    }).addTo(mymap);
+    L.geoJson(geojson, {
+      weight: 1,
+      color: '#555555',
+      style: function (feature) {
+        switch (feature.properties.STATO) {
+          case 'Ducato di Modena e Reggio': return {fillColor: "#D0DD3D", fillOpacity: 1.0};
+          case 'Regno di Sardegna': return {fillColor: "#4B61D1", fillOpacity: 1.0};
+          case 'Regno Lombardo Veneto': return {fillColor: "#009B77", fillOpacity: 1.0};
+          case 'Ducato di Parma': return {fillColor: "#D65076", fillOpacity: 1.0};
+          case 'Granducato di Toscana': return {fillColor: "#7FCDCD", fillOpacity: 1.0};
+          case 'Stato Pontificio': return {fillColor: "#EFC050", fillOpacity: 1.0};
+          case 'Regno delle Due Sicilie': return {fillColor: "#BC243C", fillOpacity: 1.0};
+        }
+      }
+    }).addTo(mymap);
+  });
+
 </script>
