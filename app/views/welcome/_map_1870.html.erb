@@ -1,0 +1,27 @@
+<script type="application/javascript">
+  $.getJSON('geojson/1870.geojson', function (result) {
+    var geojson = result,
+        map_1870 = L.map('1870').setView([42.10, 12.50], 5),
+        opacity = 1.0;
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      maxZoom: 18,
+      id: 'kalimaha.01bj24l8',
+      accessToken: 'pk.eyJ1Ijoia2FsaW1haGEiLCJhIjoiY2lucXFpNzRpMTBjN3UybTNuajJwczRreSJ9.xPsUmf8Vf_7ySGaT-KyGjw'
+    }).addTo(map_1870);
+    L.geoJson(geojson, {
+      weight: 1,
+      color: '#555555',
+      style: function (feature) {
+        switch (feature.properties.STATO) {
+          case 'Ducato di Parma': return {fillColor: "#D65076", fillOpacity: opacity};
+          case 'Stato Pontificio': return {fillColor: "#EFC050", fillOpacity: opacity};
+          case 'Regno d\'Italia': return {fillColor: "#4B61D1", fillOpacity: opacity};
+          case 'Granducato di Toscana': return {fillColor: "#7FCDCD", fillOpacity: opacity};
+          case 'Regno Lombardo Veneto': return {fillColor: "#009B77", fillOpacity: opacity};
+          case 'Regno delle Due Sicilie': return {fillColor: "#BC243C", fillOpacity: opacity};
+          case 'Ducato di Modena e Reggio': return {fillColor: "#D0DD3D", fillOpacity: opacity};
+        }
+      }
+    }).addTo(map_1870);
+  });
+</script>

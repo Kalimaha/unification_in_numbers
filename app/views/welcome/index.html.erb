@@ -4,35 +4,76 @@
 
 <hr>
 
-<div id="mapid" style="height: 350px; width: 300px;"></div>
+<!-- First row maps. -->
+<div class="row">
+  <div class="col-lg-4">
+    <div id="1859" style="height: 350px; width: 100%;"></div>
+  </div>
+  <div class="col-lg-4">
+    <div id="1860" style="height: 350px; width: 100%;"></div>
+  </div>
+  <div class="col-lg-4">
+    <div id="1861" style="height: 350px; width: 100%;"></div>
+  </div>
+</div>
 
-<script type="application/javascript">
+<!-- First row titles. -->
+<div class="row">
+  <div class="col-lg-4 text-center">
+    <h2>
+      1859
+    </h2>
+  </div>
+  <div class="col-lg-4 text-center">
+    <h2>
+      1860
+    </h2>
+  </div>
+  <div class="col-lg-4 text-center">
+    <h2>
+      1861
+    </h2>
+  </div>
+</div>
 
+<!-- Second row maps. -->
+<div class="row">
+  <div class="col-lg-4">
+    <div id="1866" style="height: 350px; width: 100%;"></div>
+  </div>
+  <div class="col-lg-4">
+    <div id="1870" style="height: 350px; width: 100%;"></div>
+  </div>
+  <div class="col-lg-4">
+    <div id="1918" style="height: 350px; width: 100%;"></div>
+  </div>
+</div>
 
-  $.getJSON('geojson/1859.geojson', function (result) {
-    var geojson = result;
-    var mymap = L.map('mapid').setView([41.86, 12.50], 5);
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-      maxZoom: 18,
-      id: 'kalimaha.01bj24l8',
-      accessToken: 'pk.eyJ1Ijoia2FsaW1haGEiLCJhIjoiY2lucXFpNzRpMTBjN3UybTNuajJwczRreSJ9.xPsUmf8Vf_7ySGaT-KyGjw'
-    }).addTo(mymap);
-    L.geoJson(geojson, {
-      weight: 1,
-      color: '#555555',
-      style: function (feature) {
-        switch (feature.properties.STATO) {
-          case 'Ducato di Modena e Reggio': return {fillColor: "#D0DD3D", fillOpacity: 1.0};
-          case 'Regno di Sardegna': return {fillColor: "#4B61D1", fillOpacity: 1.0};
-          case 'Regno Lombardo Veneto': return {fillColor: "#009B77", fillOpacity: 1.0};
-          case 'Ducato di Parma': return {fillColor: "#D65076", fillOpacity: 1.0};
-          case 'Granducato di Toscana': return {fillColor: "#7FCDCD", fillOpacity: 1.0};
-          case 'Stato Pontificio': return {fillColor: "#EFC050", fillOpacity: 1.0};
-          case 'Regno delle Due Sicilie': return {fillColor: "#BC243C", fillOpacity: 1.0};
-        }
-      }
-    }).addTo(mymap);
-  });
+<!-- Second row titles. -->
+<div class="row">
+  <div class="col-lg-4 text-center">
+    <h2>
+      1866
+    </h2>
+  </div>
+  <div class="col-lg-4 text-center">
+    <h2>
+      1870
+    </h2>
+  </div>
+  <div class="col-lg-4 text-center">
+    <h2>
+      1918
+    </h2>
+  </div>
+</div>
 
-</script>
+<!-- Leaflet scripts. -->
+<%= render 'map_1859' %>
+<%= render 'map_1860' %>
+<%= render 'map_1861' %>
+<%= render 'map_1866' %>
+<%= render 'map_1870' %>
+<%= render 'map_1918' %>
+
+<hr>

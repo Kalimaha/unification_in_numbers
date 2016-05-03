@@ -23,6 +23,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+# Font Awesome
+gem 'font-awesome-rails', '~> 4.1.0.0'
+
 # Leaflet
 gem 'leaflet-rails', '~> 0.7.7'
 
