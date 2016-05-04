@@ -33,6 +33,9 @@ gem 'font-awesome-rails', '~> 4.1.0.0'
 # Leaflet
 gem 'leaflet-rails', '~> 0.7.7'
 
+# Highcharts
+gem 'highcharts-rails', '~> 4.2', '>= 4.2.3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
