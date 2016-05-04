@@ -1,0 +1,47 @@
+<script type="application/javascript">
+
+  /* Maps buffer. */
+  var maps = [],
+      i,
+      j;
+
+  /* Synchronize maps. */
+  function sync_map(map) {
+
+    /* Add map to the buffer. */
+    maps.push(map);
+
+    /* Add synchronization when all the maps are in the buffer. */
+    if (maps.length == 6) {
+
+      for (i = 0; i < maps.length; i += 1) {
+        maps[i].on('moveend', follow).on('zoomend', follow);
+      }
+
+      var quiet = false;
+      function follow(e) {
+        if (quiet) return;
+        quiet = true;
+        for (i = 0; i < maps.length; i += 1) {
+          if (e.target === maps[i]) {
+            for (j = 0; j < maps.length; j += 1) {
+              if (j !== i) {
+                sync(maps[j], e);
+              }
+            }
+          }
+        }
+        quiet = false;
+      }
+
+      function sync(map, e) {
+        map.setView(e.target.getCenter(), e.target.getZoom(), {
+          animate: false,
+          reset: true
+        });
+      }
+
+    }
+
+  }
+</script>
