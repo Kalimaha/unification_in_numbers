@@ -1,0 +1,40 @@
+<!-- Heatmap GDP per Person. -->
+<script type="application/javascript">
+  $('#chart_5').highcharts({
+    chart: {
+      type: 'heatmap'
+    },
+    title: {
+      text: null
+    },
+    colorAxis: {
+      min: 0.5,
+      minColor: '#FFFFFF',
+      maxColor: '#009B77'
+    },
+    yAxis: {
+      categories: ['Papal States', 'Kingdom of Sardinia', 'Kingdom of Lombardy Venetia', 'Kingdom of the Two Sicilies'],
+      title: {
+        text: null
+      }
+    },
+    xAxis: {
+      categories: ['1871', '1881', '1891', '1901', '1911', '1921', '1931', '1938', '1951', '1961', '1971', '1981', '1991', '2001', '2011']
+    },
+    series: [
+      {
+        name: 'GDP per Person',
+        data: <%= @data_chart_05.to_json.html_safe %>,
+        dataLabels: {
+          enabled: true,
+          color: '#fff'
+        }
+      }
+    ],
+    tooltip: {
+      formatter: function () {
+        return '<b>' + this.series.name + ':</b> ' + this.point.value + '<br>' + this.series.xAxis.categories[this.point.x] + ', ' + this.series.yAxis.categories[this.point.y];
+      }
+    }
+  });
+</script>

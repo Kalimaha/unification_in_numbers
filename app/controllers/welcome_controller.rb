@@ -57,7 +57,6 @@ class WelcomeController < ApplicationController
     tmp_3 = {name: 'Kingdom of Lombardy Venetia', data: [], color: '#009B77'}
     tmp_4 = {name: 'Kingdom of the Two Sicilies', data: [], color: '#BC243C'}
     Pil.group(:state, :year).order(state: :asc, year: :asc).average(:pil_per_person).each { |key, value|
-      puts "#{key}: #{value}"
       case key[0]
         when 'Papal States'
           tmp_1[:data] << [key[1], value.to_f.round(2)]
@@ -73,6 +72,32 @@ class WelcomeController < ApplicationController
     @data_chart_04 << tmp_2
     @data_chart_04 << tmp_3
     @data_chart_04 << tmp_4
+
+    # Heat Map.
+    @data_chart_05 = []
+    year = 0
+    Pil.group(:state, :year).order(state: :asc, year: :asc).average(:pil_per_person).each { |key, value|
+      if key[0] != nil && key[0] != 'Grand Duchy of Tuscany'
+        tmp = []
+        tmp << year
+        year += 1
+        year = 0 if year == 14
+        case key[0]
+          when 'Papal States'
+            tmp << 0
+          when 'Kingdom of Sardinia'
+            tmp << 1
+          when 'Kingdom of Lombardy Venetia'
+            tmp << 2
+          when 'Kingdom of the Two Sicilies'
+            tmp << 3
+          else
+            puts key[0]
+        end
+        tmp << value.to_f.round(2)
+        @data_chart_05 << tmp
+      end
+    }
 
   end
 

@@ -16,4 +16,5 @@
 //= require leaflet
 //= require highcharts
 //= require highcharts/highcharts-more
+//= require highcharts/modules/heatmap
 //= require_tree .
