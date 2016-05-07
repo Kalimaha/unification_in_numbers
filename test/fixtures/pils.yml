@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  state: MyString
+  region: MyString
+  year: 1
+  pil_per_person: 1.5
+
+two:
+  state: MyString
+  region: MyString
+  year: 1
+  pil_per_person: 1.5

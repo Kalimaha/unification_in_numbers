@@ -20,3 +20,10 @@ csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
   Tax.create!(row.to_hash)
 end
+
+# Import PIL data.
+csv_text = File.read('public/csv/pil.csv')
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+  Pil.create!(row.to_hash)
+end

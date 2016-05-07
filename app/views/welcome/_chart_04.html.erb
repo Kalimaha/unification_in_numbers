@@ -1,0 +1,19 @@
+<!-- Taxes. -->
+<script type="application/javascript">
+  $('#chart_4').highcharts({
+    plotOptions: {
+      line: {
+        marker: {
+          enabled: false
+        }
+      }
+    },
+    title: {
+      text: null
+    },
+    tooltip: {
+      shared: true
+    },
+    series: <%= @data_chart_04.to_json.html_safe %>
+  });
+</script>

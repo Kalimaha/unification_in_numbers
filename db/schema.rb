@@ -11,13 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160507000222) do
+ActiveRecord::Schema.define(version: 20160507045011) do
 
   create_table "budgets", force: :cascade do |t|
     t.string   "state"
     t.float    "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "pils", force: :cascade do |t|
+    t.string   "state"
+    t.string   "region"
+    t.integer  "year"
+    t.float    "pil_per_person"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "populations", force: :cascade do |t|
