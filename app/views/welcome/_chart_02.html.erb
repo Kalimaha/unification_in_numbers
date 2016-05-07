@@ -1,0 +1,43 @@
+<!-- Population. -->
+<script type="application/javascript">
+  $('#chart_1').highcharts({
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: 0,
+      plotShadow: false
+    },
+    credits: {
+      enabled: false
+    },
+    title: {
+      enable: false,
+      text: null,
+      align: 'center',
+      verticalAlign: 'top',
+      floating: true,
+      y: 3
+    },
+    tooltip: {
+      pointFormat: '<b>{series.name}:</b> {point.y} people ({point.percentage:.1f}%)'
+    },
+    plotOptions: {
+      pie: {
+        dataLabels: {
+          enabled: false
+        },
+        size: '100%',
+        showInLegend: true
+      }
+    },
+    series: [{
+      type: 'pie',
+      name: 'Population Share',
+      data: <%= @data_chart_02.to_json.html_safe %>
+    }],
+    legend: {
+      align: 'center',
+      layout: 'vertical',
+      verticalAlign: 'bottom'
+    }
+  });
+</script>

@@ -1,0 +1,65 @@
+<!-- Taxes. -->
+<script type="application/javascript">
+  $('#chart_3').highcharts({
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: 0,
+      plotShadow: false
+    },
+    credits: {
+      enabled: false
+    },
+    title: {
+      enable: false,
+      text: null,
+      align: 'center',
+      verticalAlign: 'top',
+      floating: true,
+      y: 3
+    },
+    tooltip: {
+      pointFormat: '<b>{series.name}:</b> {point.y} Lira/person'
+    },
+    plotOptions: {
+      pie: {
+        dataLabels: {
+          enabled: false
+        },
+        size: '100%',
+        showInLegend: true
+      }
+    },
+    xAxis: {
+      categories: [],
+      title: {
+        text: 'Lira Per Person'
+      }
+    },
+    yAxis: {
+      plotLines: [
+        {
+          value: <%= @average %>,
+          width: 1,
+          color: 'red',
+          dashStyle: 'longdashdot',
+          label: {
+            text: 'Average: <%= @average %>',
+            align: 'right'
+          },
+          zIndex: 10
+        }
+      ]
+    },
+    series: [{
+      type: 'column',
+      name: 'Taxation',
+      data: <%= @data_chart_03.to_json.html_safe %>
+    }],
+    legend: {
+      enabled: false,
+      align: 'center',
+      layout: 'vertical',
+      verticalAlign: 'bottom'
+    }
+  });
+</script>

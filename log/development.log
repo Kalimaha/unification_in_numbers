@@ -9116,3 +9116,1869 @@ Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d0
 
 
 Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-04 17:21:05 +1000
+  [1m[36m (35.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (43.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBudgets (20160506230730)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160506230730"]]
+  [1m[35m (69.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-05-07 09:08:19 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/_map_sync.html.erb (0.4ms)
+  Rendered welcome/_map_1859.html.erb (0.5ms)
+  Rendered welcome/_map_1860.html.erb (1.0ms)
+  Rendered welcome/_map_1861.html.erb (0.5ms)
+  Rendered welcome/_map_1866.html.erb (0.9ms)
+  Rendered welcome/_map_1870.html.erb (0.6ms)
+  Rendered welcome/_map_1918.html.erb (0.6ms)
+  Rendered welcome/_charts.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (58.5ms)
+Completed 200 OK in 2800ms (Views: 2786.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-07 09:08:22 +1000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.0ms)
+  Rendered welcome/_map_1861.html.erb (0.0ms)
+  Rendered welcome/_map_1866.html.erb (0.0ms)
+  Rendered welcome/_map_1870.html.erb (0.0ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_charts.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 116ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:08:22 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:08:35 +1000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_charts.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 166ms (Views: 164.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:08:36 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (4.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["value", 0.4], ["created_at", "2016-05-06 23:16:58.796247"], ["updated_at", "2016-05-06 23:16:58.796247"]]
+  [1m[35m (242.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Parma"], ["value", 1.2], ["created_at", "2016-05-06 23:16:59.045275"], ["updated_at", "2016-05-06 23:16:59.045275"]]
+  [1m[36m (524.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Papal States"], ["value", 90.6], ["created_at", "2016-05-06 23:16:59.572210"], ["updated_at", "2016-05-06 23:16:59.572210"]]
+  [1m[35m (90.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["value", 27.0], ["created_at", "2016-05-06 23:16:59.665192"], ["updated_at", "2016-05-06 23:16:59.665192"]]
+  [1m[36m (48.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["value", 85.2], ["created_at", "2016-05-06 23:16:59.716092"], ["updated_at", "2016-05-06 23:16:59.716092"]]
+  [1m[35m (47.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["value", 20.8], ["created_at", "2016-05-06 23:16:59.765808"], ["updated_at", "2016-05-06 23:16:59.765808"]]
+  [1m[36m (36.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["value", 443.2], ["created_at", "2016-05-06 23:16:59.804301"], ["updated_at", "2016-05-06 23:16:59.804301"]]
+  [1m[35m (41.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["value", 0.4], ["created_at", "2016-05-06 23:18:01.660029"], ["updated_at", "2016-05-06 23:18:01.660029"]]
+  [1m[35m (68.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Parma"], ["value", 1.2], ["created_at", "2016-05-06 23:18:01.733513"], ["updated_at", "2016-05-06 23:18:01.733513"]]
+  [1m[36m (42.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Papal States"], ["value", 90.6], ["created_at", "2016-05-06 23:18:01.778771"], ["updated_at", "2016-05-06 23:18:01.778771"]]
+  [1m[35m (48.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["value", 27.0], ["created_at", "2016-05-06 23:18:01.829330"], ["updated_at", "2016-05-06 23:18:01.829330"]]
+  [1m[36m (36.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["value", 85.2], ["created_at", "2016-05-06 23:18:01.868884"], ["updated_at", "2016-05-06 23:18:01.868884"]]
+  [1m[35m (42.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["value", 20.8], ["created_at", "2016-05-06 23:18:01.913819"], ["updated_at", "2016-05-06 23:18:01.913819"]]
+  [1m[36m (46.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["value", 443.2], ["created_at", "2016-05-06 23:18:01.962136"], ["updated_at", "2016-05-06 23:18:01.962136"]]
+  [1m[35m (49.8ms)[0m  commit transaction
+  [1m[36m (45.5ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (32.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (50.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (51.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36m (27.7ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (48.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (44.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (34.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["value", 0.4], ["created_at", "2016-05-06 23:18:39.110233"], ["updated_at", "2016-05-06 23:18:39.110233"]]
+  [1m[35m (57.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Parma"], ["value", 1.2], ["created_at", "2016-05-06 23:18:39.172844"], ["updated_at", "2016-05-06 23:18:39.172844"]]
+  [1m[36m (40.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Papal States"], ["value", 90.6], ["created_at", "2016-05-06 23:18:39.215366"], ["updated_at", "2016-05-06 23:18:39.215366"]]
+  [1m[35m (27.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["value", 27.0], ["created_at", "2016-05-06 23:18:39.245414"], ["updated_at", "2016-05-06 23:18:39.245414"]]
+  [1m[36m (32.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["value", 85.2], ["created_at", "2016-05-06 23:18:39.280184"], ["updated_at", "2016-05-06 23:18:39.280184"]]
+  [1m[35m (26.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["value", 20.8], ["created_at", "2016-05-06 23:18:39.308844"], ["updated_at", "2016-05-06 23:18:39.308844"]]
+  [1m[36m (32.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["value", 443.2], ["created_at", "2016-05-06 23:18:39.343558"], ["updated_at", "2016-05-06 23:18:39.343558"]]
+  [1m[35m (26.5ms)[0m  commit transaction
+  [1m[36m (51.2ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (35.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (73.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (51.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36m (42.7ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (33.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (39.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (45.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (24.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["value", 0.4], ["created_at", "2016-05-06 23:19:44.821204"], ["updated_at", "2016-05-06 23:19:44.821204"]]
+  [1m[35m (42.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Parma"], ["value", 1.2], ["created_at", "2016-05-06 23:19:44.893735"], ["updated_at", "2016-05-06 23:19:44.893735"]]
+  [1m[36m (28.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Papal States"], ["value", 90.6], ["created_at", "2016-05-06 23:19:44.925770"], ["updated_at", "2016-05-06 23:19:44.925770"]]
+  [1m[35m (32.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["value", 27.0], ["created_at", "2016-05-06 23:19:44.960958"], ["updated_at", "2016-05-06 23:19:44.960958"]]
+  [1m[36m (26.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["value", 85.2], ["created_at", "2016-05-06 23:19:44.990573"], ["updated_at", "2016-05-06 23:19:44.990573"]]
+  [1m[35m (31.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["value", 20.8], ["created_at", "2016-05-06 23:19:45.024584"], ["updated_at", "2016-05-06 23:19:45.024584"]]
+  [1m[36m (26.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["value", 443.2], ["created_at", "2016-05-06 23:19:45.053162"], ["updated_at", "2016-05-06 23:19:45.053162"]]
+  [1m[35m (258.8ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-05-07 09:22:48 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (2.1ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.2ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.2ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_charts.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 237ms (Views: 187.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:22:49 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:23:10 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.2ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.0ms)
+  Rendered welcome/_charts.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 87ms (Views: 78.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:23:11 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:27:37 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (1.5ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 315ms (Views: 295.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:27:37 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:29:13 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.6ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.0ms)
+  Rendered welcome/_map_1866.html.erb (0.0ms)
+  Rendered welcome/_map_1870.html.erb (0.0ms)
+  Rendered welcome/_map_1918.html.erb (0.0ms)
+  Rendered welcome/_chart_01.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (95.7ms)
+Completed 200 OK in 161ms (Views: 144.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:29:13 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:29:13 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:29:14 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:32:08 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+NameError (undefined local variable or method `colors' for #<WelcomeController:0x007fb806c6ef38>):
+  app/controllers/welcome_controller.rb:14:in `block in index'
+  app/controllers/welcome_controller.rb:10:in `index'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (191.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-07 09:32:24 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/welcome_controller.rb:14:in `block in index'
+  app/controllers/welcome_controller.rb:10:in `index'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.9ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (155.8ms)
+
+
+Started GET "/" for ::1 at 2016-05-07 09:32:40 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.3ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (73.7ms)
+Completed 200 OK in 230ms (Views: 221.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:32:40 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:33:45 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (493.1ms)
+Completed 200 OK in 833ms (Views: 824.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:33:46 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:34:04 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.3ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.0ms)
+  Rendered welcome/_map_1861.html.erb (0.0ms)
+  Rendered welcome/_map_1866.html.erb (0.0ms)
+  Rendered welcome/_map_1870.html.erb (0.0ms)
+  Rendered welcome/_map_1918.html.erb (0.0ms)
+  Rendered welcome/_chart_01.html.erb (0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 66ms (Views: 58.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:34:04 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:36:49 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.6ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (64.8ms)
+Completed 200 OK in 157ms (Views: 147.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:36:49 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:37:13 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.5ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 86ms (Views: 74.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:37:13 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:37:49 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.3ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.0ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:37:49 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:38:17 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.2ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.9ms)
+  Rendered welcome/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 95ms (Views: 93.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:38:18 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:39:25 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.6ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 222ms (Views: 203.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:39:26 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:40:17 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.4ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.0ms)
+  Rendered welcome/_map_1860.html.erb (0.0ms)
+  Rendered welcome/_map_1861.html.erb (0.0ms)
+  Rendered welcome/_map_1866.html.erb (0.0ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.0ms)
+  Rendered welcome/_chart_01.html.erb (1.0ms)
+  Rendered welcome/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 69ms (Views: 60.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:40:17 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:40:18 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:40:34 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.0ms)
+  Rendered welcome/_map_1860.html.erb (0.0ms)
+  Rendered welcome/_map_1861.html.erb (0.0ms)
+  Rendered welcome/_map_1866.html.erb (0.0ms)
+  Rendered welcome/_map_1870.html.erb (0.0ms)
+  Rendered welcome/_map_1918.html.erb (0.0ms)
+  Rendered welcome/_chart_01.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 78ms (Views: 68.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:40:34 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:40:35 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:41:08 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.2ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.0ms)
+  Rendered welcome/_map_1860.html.erb (0.0ms)
+  Rendered welcome/_map_1861.html.erb (0.0ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:41:08 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:43:15 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 255ms (Views: 246.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:43:15 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:43:23 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.2ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.0ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:43:23 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:43:44 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.2ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (74.9ms)
+Completed 200 OK in 363ms (Views: 361.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:43:45 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:44:00 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.4ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.0ms)
+  Rendered welcome/_map_1860.html.erb (0.0ms)
+  Rendered welcome/_map_1861.html.erb (0.0ms)
+  Rendered welcome/_map_1866.html.erb (0.0ms)
+  Rendered welcome/_map_1870.html.erb (0.0ms)
+  Rendered welcome/_map_1918.html.erb (0.2ms)
+  Rendered welcome/_chart_01.html.erb (1.3ms)
+  Rendered welcome/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 88ms (Views: 77.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:44:01 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:46:04 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (66.3ms)
+Completed 200 OK in 213ms (Views: 204.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:46:05 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:47:20 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.4ms)[0m  SELECT "budgets".* FROM "budgets"
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (1.2ms)
+  Rendered welcome/index.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 307ms (Views: 297.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:47:21 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:48:26 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."state" ASC[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.2ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (157.6ms)
+Completed 200 OK in 794ms (Views: 786.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:48:27 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:48:48 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.5ms)[0m  SELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."value" DESC
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.2ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.2ms)
+  Rendered welcome/_map_1918.html.erb (0.2ms)
+  Rendered welcome/_chart_01.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 317ms (Views: 308.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:48:49 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 09:49:26 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."value" DESC[0m
+  Rendered welcome/_map_sync.html.erb (0.0ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.2ms)
+  Rendered welcome/_chart_01.html.erb (1.5ms)
+  Rendered welcome/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 115ms (Views: 107.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 09:49:26 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePopulations (20160506235627)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160506235627"]]
+  [1m[36m (35.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (45.3ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (33.7ms)[0m  CREATE TABLE "populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (35.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (584.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (382.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160506235627')[0m
+  [1m[35m (37.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36m (40.3ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (41.3ms)[0m  CREATE TABLE "populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (38.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (44.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (33.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160506235627')[0m
+  [1m[35m (38.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["value", 0.4], ["created_at", "2016-05-07 00:00:09.128435"], ["updated_at", "2016-05-07 00:00:09.128435"]]
+  [1m[35m (28.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Parma"], ["value", 1.2], ["created_at", "2016-05-07 00:00:09.163497"], ["updated_at", "2016-05-07 00:00:09.163497"]]
+  [1m[36m (93.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Papal States"], ["value", 90.6], ["created_at", "2016-05-07 00:00:09.258904"], ["updated_at", "2016-05-07 00:00:09.258904"]]
+  [1m[35m (31.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["value", 27.0], ["created_at", "2016-05-07 00:00:09.292517"], ["updated_at", "2016-05-07 00:00:09.292517"]]
+  [1m[36m (34.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["value", 85.2], ["created_at", "2016-05-07 00:00:09.329202"], ["updated_at", "2016-05-07 00:00:09.329202"]]
+  [1m[35m (26.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["value", 20.8], ["created_at", "2016-05-07 00:00:09.357187"], ["updated_at", "2016-05-07 00:00:09.357187"]]
+  [1m[36m (32.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["value", 443.2], ["created_at", "2016-05-07 00:00:09.391606"], ["updated_at", "2016-05-07 00:00:09.391606"]]
+  [1m[35m (25.7ms)[0m  commit transaction
+  [1m[36m (42.9ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (33.7ms)[0m  CREATE TABLE "populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (33.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (49.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (45.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160506235627')[0m
+  [1m[35m (34.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36m (32.9ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (31.5ms)[0m  CREATE TABLE "populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (42.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (46.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (32.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160506235627')[0m
+  [1m[35m (41.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506230730')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["value", 0.4], ["created_at", "2016-05-07 00:00:33.022634"], ["updated_at", "2016-05-07 00:00:33.022634"]]
+  [1m[35m (117.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Parma"], ["value", 1.2], ["created_at", "2016-05-07 00:00:33.145586"], ["updated_at", "2016-05-07 00:00:33.145586"]]
+  [1m[36m (83.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Papal States"], ["value", 90.6], ["created_at", "2016-05-07 00:00:33.231419"], ["updated_at", "2016-05-07 00:00:33.231419"]]
+  [1m[35m (100.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["value", 27.0], ["created_at", "2016-05-07 00:00:33.334280"], ["updated_at", "2016-05-07 00:00:33.334280"]]
+  [1m[36m (102.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["value", 85.2], ["created_at", "2016-05-07 00:00:33.438479"], ["updated_at", "2016-05-07 00:00:33.438479"]]
+  [1m[35m (62.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["value", 20.8], ["created_at", "2016-05-07 00:00:33.502737"], ["updated_at", "2016-05-07 00:00:33.502737"]]
+  [1m[36m (41.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["value", 443.2], ["created_at", "2016-05-07 00:00:33.546252"], ["updated_at", "2016-05-07 00:00:33.546252"]]
+  [1m[35m (27.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (27.6ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Modena and Reggio"], ["value", 600000], ["created_at", "2016-05-07 00:00:33.584218"], ["updated_at", "2016-05-07 00:00:33.584218"]]
+  [1m[36m (48.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Parma"], ["value", 500000], ["created_at", "2016-05-07 00:00:33.662200"], ["updated_at", "2016-05-07 00:00:33.662200"]]
+  [1m[35m (508.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Papal States"], ["value", 1450000], ["created_at", "2016-05-07 00:00:34.172805"], ["updated_at", "2016-05-07 00:00:34.172805"]]
+  [1m[36m (489.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of Sardinia"], ["value", 4500000], ["created_at", "2016-05-07 00:00:34.663896"], ["updated_at", "2016-05-07 00:00:34.663896"]]
+  [1m[35m (22.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Grand Duchy of Tuscany"], ["value", 1800000], ["created_at", "2016-05-07 00:00:34.687947"], ["updated_at", "2016-05-07 00:00:34.687947"]]
+  [1m[36m (22.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of Lombardy Venetia"], ["value", 2800000], ["created_at", "2016-05-07 00:00:34.712750"], ["updated_at", "2016-05-07 00:00:34.712750"]]
+  [1m[35m (38.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of the Two Sicilies"], ["value", 9300000], ["created_at", "2016-05-07 00:00:34.753022"], ["updated_at", "2016-05-07 00:00:34.753022"]]
+  [1m[36m (23.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2016-05-07 10:00:38 +1000
+  [1m[35mActiveRecord::SchemaMigration Load (0.8ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."value" DESC[0m
+  [1m[35mPopulation Load (0.2ms)[0m  SELECT "populations".* FROM "populations"  ORDER BY "populations"."value" DESC
+  Rendered welcome/_map_sync.html.erb (0.2ms)
+  Rendered welcome/_map_1859.html.erb (0.2ms)
+  Rendered welcome/_map_1860.html.erb (0.2ms)
+  Rendered welcome/_map_1861.html.erb (0.4ms)
+  Rendered welcome/_map_1866.html.erb (0.2ms)
+  Rendered welcome/_map_1870.html.erb (0.2ms)
+  Rendered welcome/_map_1918.html.erb (0.2ms)
+  Rendered welcome/_chart_01.html.erb (2.4ms)
+  Rendered welcome/_chart_02.html.erb (1.7ms)
+  Rendered welcome/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 303ms (Views: 271.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 10:00:38 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTaxes (20160507000222)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "taxes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "taxes_per_person" float, "taxes_total" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160507000222"]]
+  [1m[36m (736.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2016-05-07 10:04:43 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.2ms)[0m  SELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."value" DESC
+  [1m[36mPopulation Load (0.2ms)[0m  [1mSELECT "populations".* FROM "populations"  ORDER BY "populations"."value" DESC[0m
+  [1m[35mPopulation Load (3.5ms)[0m  SELECT "populations".* FROM "populations"  ORDER BY "populations"."taxes_per_person" DESC
+SQLite3::SQLException: no such column: populations.taxes_per_person: SELECT "populations".* FROM "populations"  ORDER BY "populations"."taxes_per_person" DESC
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 4.5ms)
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: populations.taxes_per_person: SELECT "populations".* FROM "populations"  ORDER BY "populations"."taxes_per_person" DESC):
+  app/controllers/welcome_controller.rb:40:in `index'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.9ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (165.2ms)
+  [1m[36m (38.0ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (351.5ms)[0m  CREATE TABLE "populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (584.4ms)[0m  [1mCREATE TABLE "taxes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "taxes_per_person" float, "taxes_total" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (83.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (27.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (36.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160507000222')
+  [1m[36m (36.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160506230730')[0m
+  [1m[35m (30.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506235627')
+  [1m[36m (33.1ms)[0m  [1mCREATE TABLE "budgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (23.9ms)[0m  CREATE TABLE "populations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "value" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (33.9ms)[0m  [1mCREATE TABLE "taxes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "state" varchar, "taxes_per_person" float, "taxes_total" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (23.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (34.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (23.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160507000222')
+  [1m[36m (41.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160506230730')[0m
+  [1m[35m (23.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506235627')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["value", 0.4], ["created_at", "2016-05-07 00:07:00.999948"], ["updated_at", "2016-05-07 00:07:00.999948"]]
+  [1m[35m (33.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Parma"], ["value", 1.2], ["created_at", "2016-05-07 00:07:01.038447"], ["updated_at", "2016-05-07 00:07:01.038447"]]
+  [1m[36m (29.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Papal States"], ["value", 90.6], ["created_at", "2016-05-07 00:07:01.070345"], ["updated_at", "2016-05-07 00:07:01.070345"]]
+  [1m[35m (32.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["value", 27.0], ["created_at", "2016-05-07 00:07:01.104278"], ["updated_at", "2016-05-07 00:07:01.104278"]]
+  [1m[36m (21.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["value", 85.2], ["created_at", "2016-05-07 00:07:01.127837"], ["updated_at", "2016-05-07 00:07:01.127837"]]
+  [1m[35m (28.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["value", 20.8], ["created_at", "2016-05-07 00:07:01.157806"], ["updated_at", "2016-05-07 00:07:01.157806"]]
+  [1m[36m (22.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "budgets" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["value", 443.2], ["created_at", "2016-05-07 00:07:01.181866"], ["updated_at", "2016-05-07 00:07:01.181866"]]
+  [1m[35m (32.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Duchy of Modena and Reggio"], ["value", 600000], ["created_at", "2016-05-07 00:07:01.226371"], ["updated_at", "2016-05-07 00:07:01.226371"]]
+  [1m[36m (26.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Duchy of Parma"], ["value", 500000], ["created_at", "2016-05-07 00:07:01.255340"], ["updated_at", "2016-05-07 00:07:01.255340"]]
+  [1m[35m (42.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Papal States"], ["value", 1450000], ["created_at", "2016-05-07 00:07:01.299375"], ["updated_at", "2016-05-07 00:07:01.299375"]]
+  [1m[36m (59.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of Sardinia"], ["value", 4500000], ["created_at", "2016-05-07 00:07:01.360864"], ["updated_at", "2016-05-07 00:07:01.360864"]]
+  [1m[35m (24.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Grand Duchy of Tuscany"], ["value", 1800000], ["created_at", "2016-05-07 00:07:01.387756"], ["updated_at", "2016-05-07 00:07:01.387756"]]
+  [1m[36m (31.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["state", "Kingdom of Lombardy Venetia"], ["value", 2800000], ["created_at", "2016-05-07 00:07:01.421326"], ["updated_at", "2016-05-07 00:07:01.421326"]]
+  [1m[35m (26.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "populations" ("state", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["state", "Kingdom of the Two Sicilies"], ["value", 9300000], ["created_at", "2016-05-07 00:07:01.449514"], ["updated_at", "2016-05-07 00:07:01.449514"]]
+  [1m[36m (35.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "taxes" ("state", "taxes_per_person", "taxes_total", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["state", "Duchy of Modena and Reggio"], ["taxes_per_person", 20.1], ["taxes_total", 12052.0], ["created_at", "2016-05-07 00:07:01.496509"], ["updated_at", "2016-05-07 00:07:01.496509"]]
+  [1m[35m (50.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taxes" ("state", "taxes_per_person", "taxes_total", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["state", "Duchy of Parma"], ["taxes_per_person", 33.6], ["taxes_total", 16780.0], ["created_at", "2016-05-07 00:07:01.549819"], ["updated_at", "2016-05-07 00:07:01.549819"]]
+  [1m[36m (40.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "taxes" ("state", "taxes_per_person", "taxes_total", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["state", "Papal States"], ["taxes_per_person", 30.7], ["taxes_total", 48964.0], ["created_at", "2016-05-07 00:07:01.592881"], ["updated_at", "2016-05-07 00:07:01.592881"]]
+  [1m[35m (29.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taxes" ("state", "taxes_per_person", "taxes_total", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["state", "Kingdom of Sardinia"], ["taxes_per_person", 35.8], ["taxes_total", 161045.0], ["created_at", "2016-05-07 00:07:01.624743"], ["updated_at", "2016-05-07 00:07:01.624743"]]
+  [1m[36m (35.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "taxes" ("state", "taxes_per_person", "taxes_total", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["state", "Grand Duchy of Tuscany"], ["taxes_per_person", 25.3], ["taxes_total", 45543.0], ["created_at", "2016-05-07 00:07:01.662057"], ["updated_at", "2016-05-07 00:07:01.662057"]]
+  [1m[35m (41.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taxes" ("state", "taxes_per_person", "taxes_total", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["state", "Kingdom of Lombardy Venetia"], ["taxes_per_person", 27.5], ["taxes_total", 76921.0], ["created_at", "2016-05-07 00:07:01.705585"], ["updated_at", "2016-05-07 00:07:01.705585"]]
+  [1m[36m (29.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "taxes" ("state", "taxes_per_person", "taxes_total", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["state", "Kingdom of the Two Sicilies"], ["taxes_per_person", 15.9], ["taxes_total", 133195.0], ["created_at", "2016-05-07 00:07:01.737399"], ["updated_at", "2016-05-07 00:07:01.737399"]]
+  [1m[35m (34.8ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-05-07 10:07:03 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.4ms)[0m  [1mSELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."value" DESC[0m
+  [1m[35mPopulation Load (0.2ms)[0m  SELECT "populations".* FROM "populations"  ORDER BY "populations"."value" DESC
+  [1m[36mTax Load (0.2ms)[0m  [1mSELECT "taxes".* FROM "taxes"  ORDER BY "taxes"."taxes_per_person" DESC[0m
+  Rendered welcome/_map_sync.html.erb (0.5ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.2ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (1.0ms)
+  Rendered welcome/_chart_02.html.erb (0.5ms)
+  Rendered welcome/_chart_03.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 233ms (Views: 212.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 10:07:04 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 10:08:44 +1000
+Processing by WelcomeController#index as HTML
+  [1m[35mBudget Load (0.5ms)[0m  SELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."value" DESC
+  [1m[36mPopulation Load (0.3ms)[0m  [1mSELECT "populations".* FROM "populations"  ORDER BY "populations"."value" DESC[0m
+  [1m[35mTax Load (0.3ms)[0m  SELECT "taxes".* FROM "taxes"  ORDER BY "taxes"."taxes_per_person" DESC
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.1ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.6ms)
+  Rendered welcome/_chart_02.html.erb (0.6ms)
+  Rendered welcome/_chart_03.html.erb (1.1ms)
+  Rendered welcome/index.html.erb within layouts/application (104.2ms)
+Completed 200 OK in 207ms (Views: 177.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 10:08:44 +1000
+
+
+Started GET "/" for ::1 at 2016-05-07 10:09:34 +1000
+Processing by WelcomeController#index as HTML
+  [1m[36mBudget Load (0.6ms)[0m  [1mSELECT "budgets".* FROM "budgets"  ORDER BY "budgets"."value" DESC[0m
+  [1m[35mPopulation Load (0.2ms)[0m  SELECT "populations".* FROM "populations"  ORDER BY "populations"."value" DESC
+  [1m[36mTax Load (0.4ms)[0m  [1mSELECT "taxes".* FROM "taxes"  ORDER BY "taxes"."taxes_per_person" DESC[0m
+  Rendered welcome/_map_sync.html.erb (0.1ms)
+  Rendered welcome/_map_1859.html.erb (0.1ms)
+  Rendered welcome/_map_1860.html.erb (0.1ms)
+  Rendered welcome/_map_1861.html.erb (0.1ms)
+  Rendered welcome/_map_1866.html.erb (0.2ms)
+  Rendered welcome/_map_1870.html.erb (0.1ms)
+  Rendered welcome/_map_1918.html.erb (0.1ms)
+  Rendered welcome/_chart_01.html.erb (0.7ms)
+  Rendered welcome/_chart_02.html.erb (0.5ms)
+  Rendered welcome/_chart_03.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 222ms (Views: 197.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/application.self-9f412c2bd48af8ef3563dd5662cb2c2ec0e860952ae21c1c2392da993e1cc2b5.css?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/leaflet.self-825a6c6a3316f8327d71dd13df017f3cbeec8f9da3d3882bbdecbbcaffcf169b.css?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/leaflet.self-493a2d3ac5c979cb6eec7867e18ff192046edefb11bcccf2418ff1b1f1bfa431.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/highcharts/highcharts-more.self-61283cc4edb6c88d6b81a9a769fc7204b334a61ab8e0c0923d6ac10e1597b2d6.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/highcharts.self-38ce3089eb374fed595487dd19b6ac00e49340b4ab97300a0f26c63800cc0b1e.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-05-07 10:09:35 +1000
